@@ -19,7 +19,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd docs
-          yarn clear
           yarn install --frozen-lockfile
 
       - name: Build site
