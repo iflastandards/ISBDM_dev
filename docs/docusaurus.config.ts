@@ -13,12 +13,12 @@ const config: Config = {
   url: 'https://iflastandards.info',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/ISBDM_dev',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iflastandards', // Replace with your GitHub username
-  projectName: 'ISBDM', // Replace with your repository name
+  projectName: 'ISBDM-dev', // Replace with your repository name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,7 +41,7 @@ const config: Config = {
           path: './docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/iflastandards/ISBDM/edit/main/',
+          editUrl: 'https://github.com/iflastandards/ISBDM/edit/main/docs/',
             lastVersion: '1.0.0',
           versions: {
             '1.0.0': {
@@ -49,8 +49,8 @@ const config: Config = {
               path: '1.0.0',
             },
             current: {
-              label: 'draft',
-              path: 'draft',
+              label: 'development',
+              path: 'develop',
             },
           },
         },
@@ -62,7 +62,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/iflastandards/ISBDM/edit/main/',
+          editUrl: 'https://github.com/iflastandards/ISBDM/edit/main/docs',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
