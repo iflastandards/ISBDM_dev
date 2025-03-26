@@ -19,13 +19,14 @@ jobs:
       - name: Install dependencies
         run: |
           cd docs
-          yarn install --frozen-lockfile
+          yarn clear
+          yarn cache clean --forceinstall --frozen-lockfile
 
-      - name: Build site with correct base URL
+      - name: Build site
         run: |
           cd docs
-          # Explicitly set the base URL for GitHub Pages
-          yarn build --out-dir build --base-url=/ISBDM_dev/
+          # The correct way to build Docusaurus (no command line arguments for base URL)
+          yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
