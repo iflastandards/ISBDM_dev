@@ -16,11 +16,16 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies and build site
+      - name: Install dependencies
         run: |
           cd docs
           yarn install --frozen-lockfile
-          yarn build
+
+      - name: Build site with correct base URL
+        run: |
+          cd docs
+          # Explicitly set the base URL for GitHub Pages
+          yarn build --out-dir build --base-url=/ISBDM_dev/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
