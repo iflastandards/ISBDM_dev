@@ -20,7 +20,7 @@ jobs:
         run: |
           cd docs
           yarn clear
-          yarn cache clean --forceinstall --frozen-lockfile
+          yarn install --frozen-lockfile
 
       - name: Build site
         run: |
