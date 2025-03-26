@@ -10,15 +10,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://iflastandards.info',
-  // Set the /<baseUrl>/ pathname under which your site is served
+  url: 'https://iflastandards.github.io', // GitHub organization page  // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/ISBDM_dev/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iflastandards', // Replace with your GitHub username
-  projectName: 'ISBDM-dev', // Replace with your repository name
+  projectName: 'ISBDM_dev', // Replace with your repository name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -116,7 +115,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/intro',
             },
           ],
         },
