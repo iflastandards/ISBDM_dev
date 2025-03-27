@@ -12,12 +12,13 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://iflastandards.github.io', // GitHub organization page  // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ISBDM_dev/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iflastandards', // Replace with your GitHub username
   projectName: 'ISBDM_dev', // Replace with your repository name
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
